@@ -49,7 +49,7 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button Content="Előző" Margin="5" Padding="5" Width="100" Click="ElozoClick"/>
                 <Button Content="Válasz mentése" Margin="5" Padding="5" Width="100" Click="ValaszMenteseClick"/>
-                <Button Content="Következő" Margin="5" Padding="5"Width="100" Click="KovetkezoClick"/>
+                <Button Content="Következő" Margin="5" Padding="5" Width="100" Click="KovetkezoClick"/>
             </StackPanel>
         </StackPanel>
     </Grid>
