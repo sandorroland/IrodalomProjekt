@@ -7,6 +7,28 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Background="LightGray">
+            <Button DockPanel.Dock="Top"
+                    Content="Betöltés"
+                    Margin="5"
+                    Click="Betoltes_Click"/>
+            <Button DockPanel.Dock="Bottom"
+                    Content="Kilépés"
+                    Margin="5"
+                    Click="Button_Click"/>
+            <Button DockPanel.Dock="Top"
+                     Content="Kiértékelés"
+                     Margin="5"
+                     Click="Button_Click_1"/>
+            <TextBlock Text="Eredmény:" Background="Beige" x:Name="tbkEredmeny"/>
+        </DockPanel>
     </Grid>
 </Window>
