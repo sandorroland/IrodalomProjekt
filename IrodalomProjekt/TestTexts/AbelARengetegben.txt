@@ -1,0 +1,50 @@
+
+1.Ki a mű fő szereplője?(Teljes név)
+A)Szakállas Ábel  
+B)Péter Gvárdián  
+C)Szalay István
+
+2.Hogy hívják a kutyát?
+A)Lapát
+B)Bolha
+C)Mancs
+
+3.Hova rejtette el Ábel a fegyvert?
+A)Fa
+B)Ház
+C)Pince
+
+4.Hol szerzett munkát Ábelnek az édesapja?
+A)Bankár
+B)Erdész
+C)Erdőpásztor
+
+5.Milyen háziállatot vittek magukkal?
+A)Macska
+B)Hal
+C)Hörcsög
+
+6.Ki az a férfi, aki becsapja a fa vásárlásakor Ábelt?
+A)Márkus
+B)Fuszulán
+C)Surgyelán
+
+7.Ki volt fent a fán?
+A)Ábel
+B)Márkus
+C)Subi Roland
+
+8.Milyen származású ember volt Surgyelán?
+A)Magyar
+B)Román
+C)Török
+
+9.Milyen állatot ettek meg amitől rosszul lettek?
+A)Sas
+B)Nyúl
+C)Róka
+
+10.Milyen betegsége volt Márkusnak?
+A)Tüdőbaj
+B)ételmérgezés
+C)ebola
