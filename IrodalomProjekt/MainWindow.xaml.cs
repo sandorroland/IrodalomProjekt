@@ -35,9 +35,13 @@ namespace IrodalomProjekt
                     StreamReader sr = new StreamReader(fileName, Encoding.UTF8);
                     while (!sr.EndOfStream)
                     {
+                        sr.ReadLine();
                         string KerdesSzovege = sr.ReadLine();
                         string ValaszA = sr.ReadLine();
                         string ValaszB = sr.ReadLine();
+                        string ValaszC = sr.ReadLine();
+                        string HelyesValasz = sr.ReadLine();
+                        kerdesek.Add(new Kerdes(KerdesSzovege, ValaszA, ValaszB, ValaszC, HelyesValasz));
                     }
                 }
              catch ( IOException ex)
