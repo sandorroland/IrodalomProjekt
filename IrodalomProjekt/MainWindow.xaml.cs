@@ -33,12 +33,16 @@ namespace IrodalomProjekt
                 try
                 {
                     StreamReader sr = new StreamReader(fileName, Encoding.UTF8);
-                    while(!sr.EndOfStream)
+                    while (!sr.EndOfStream)
                     {
-                        string KerdesSzovege = sr.Readline();
-                        string ValaszA = sr.Readline();
-                        string ValaszB = sr.Readline();
+                        string KerdesSzovege = sr.ReadLine();
+                        string ValaszA = sr.ReadLine();
+                        string ValaszB = sr.ReadLine();
                     }
+                }
+             catch ( IOException ex)
+                {
+                    throw new IOException("Hiba a fájl olvasása közben: " + ex.Message);
                 }
                 
             }
