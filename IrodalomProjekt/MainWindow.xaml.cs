@@ -130,7 +130,22 @@ namespace IrodalomProjekt
 
         private void ValaszMenteseClick(object sender, RoutedEventArgs e)
         {
-
+            if(aktualisIndex < kerdesek.Count)
+            {
+                if(ValaszA.IsChecked==true)
+                {
+                    kerdesek[aktualisIndex].FelhasznaloValasza = "A";
+                }
+                else if (ValaszB.IsChecked==true)
+                {
+                    kerdesek[aktualisIndex].FelhasznaloValasza="B";
+                }
+                else if(ValaszC.IsChecked==true)
+                {
+                    kerdesek[aktualisIndex].FelhasznaloValasza="C";
+                }
+            }
+            MessageBox.Show("Válasz mentve!", "Információ");
         }
 
         private void KovetkezoClick(object sender, RoutedEventArgs e)
