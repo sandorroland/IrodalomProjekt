@@ -39,7 +39,7 @@ namespace IrodalomProjekt
                         string ValaszB = sr.Readline();
                     }
                 }
-                }
+                
             }
         }
 
@@ -84,7 +84,11 @@ namespace IrodalomProjekt
 
         private void ElozoClick(object sender, RoutedEventArgs e)
         {
-
+            if (aktualisIndex > 0)
+            {
+                aktualisIndex--;
+                MutatKerdes(aktualisIndex);
+            }
         }
 
         private void ValaszMenteseClick(object sender, RoutedEventArgs e)
@@ -94,7 +98,11 @@ namespace IrodalomProjekt
 
         private void KovetkezoClick(object sender, RoutedEventArgs e)
         {
-
+            if(aktualisIndex <kerdesek.Count-1)
+            {
+                aktualisIndex++;
+                MutatKerdes(aktualisIndex);
+            }
         }
     }
 }
