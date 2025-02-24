@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Markup.Localizer;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
@@ -67,9 +68,41 @@ namespace IrodalomProjekt
             }
         }
 
-        private void MutatKerdes(int aktualisIndex)
+        private void MutatKerdes(int index)
         {
-            throw new NotImplementedException();
+           if(kerdesek.Count>index)
+            {
+                Kerdes kerdes=kerdesek[index];
+                tbkKerdesSzovege.Text = kerdes.KerdesSzovege;
+                ValaszA.Content=kerdes.ValaszA;
+                ValaszB.Content = kerdes.ValaszB;
+                ValaszC.Content = kerdes.ValaszC;
+                switch(kerdes.FelhasznaloValasza)
+                {
+                    case "A":
+                        ValaszA.IsChecked = true;
+                        ValaszB.IsChecked = false;
+                        ValaszC.IsChecked = false;
+                        break;
+                    case "B":
+                        ValaszB.IsChecked = true;
+                        ValaszA.IsChecked = false;
+                        ValaszC.IsChecked = false;
+                        break;
+                    case "C":
+                        ValaszC.IsChecked = true;
+                        ValaszB.IsChecked = false;
+                        ValaszA.IsChecked = false;
+                        break;
+                    default:
+                        ValaszA.IsChecked = false;
+                        ValaszB.IsChecked = false;
+                        ValaszC.IsChecked = false;
+                        break;
+                }
+
+
+            }
         }
 
         private void KilepesClick(object sender, RoutedEventArgs e)
